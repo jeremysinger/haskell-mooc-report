@@ -71,14 +71,14 @@
 \begin{document}
 
 %% Title information
-\title[Short Title]{Full Title}         %% [Short Title] is optional;
+\title[]{The Glasgow Haskell MOOC}         %% [Short Title] is optional;
                                         %% when present, will be used in
                                         %% header instead of Full Title.
-\titlenote{with title note}             %% \titlenote is optional;
+%%\titlenote{with title note}             %% \titlenote is optional;
                                         %% can be repeated if necessary;
                                         %% contents suppressed with 'anonymous'
-\subtitle{Subtitle}                     %% \subtitle is optional
-\subtitlenote{with subtitle note}       %% \subtitlenote is optional;
+\subtitle{Five Steps to Online Learning Success}    %% \subtitle is optional
+%%\subtitlenote{with subtitle note}       %% \subtitlenote is optional;
                                         %% can be repeated if necessary;
                                         %% contents suppressed with 'anonymous'
 
@@ -94,66 +94,30 @@
 %% extraction tools.
 
 %% Author with single affiliation.
-\author{First1 Last1}
-\authornote{with author1 note}          %% \authornote is optional;
+\author{Jeremy Singer \and Wim Vanderbauwhede}
+%%\authornote{with author1 note}          %% \authornote is optional;
                                         %% can be repeated if necessary
-\orcid{nnnn-nnnn-nnnn-nnnn}             %% \orcid is optional
+%%\orcid{nnnn-nnnn-nnnn-nnnn}             %% \orcid is optional
 \affiliation{
-  \position{Position1}
-  \department{Department1}              %% \department is recommended
-  \institution{Institution1}            %% \institution is required
-  \streetaddress{Street1 Address1}
-  \city{City1}
+  \position{Lecturer}
+  \department{School of Computing Science}   %% \department is recommended
+  \institution{University of Glasgow}         %% \institution is required
+  \streetaddress{University Avenue}
+  \city{Glasgow}
   \state{State1}
-  \postcode{Post-Code1}
-  \country{Country1}
+  \postcode{G12 8QQ}
+  \country{UK}
 }
-\email{first1.last1@inst1.edu}          %% \email is recommended
-
-%% Author with two affiliations and emails.
-\author{First2 Last2}
-\authornote{with author2 note}          %% \authornote is optional;
-                                        %% can be repeated if necessary
-\orcid{nnnn-nnnn-nnnn-nnnn}             %% \orcid is optional
-\affiliation{
-  \position{Position2a}
-  \department{Department2a}             %% \department is recommended
-  \institution{Institution2a}           %% \institution is required
-  \streetaddress{Street2a Address2a}
-  \city{City2a}
-  \state{State2a}
-  \postcode{Post-Code2a}
-  \country{Country2a}
-}
-\email{first2.last2@inst2a.com}         %% \email is recommended
-\affiliation{
-  \position{Position2b}
-  \department{Department2b}             %% \department is recommended
-  \institution{Institution2b}           %% \institution is required
-  \streetaddress{Street3b Address2b}
-  \city{City2b}
-  \state{State2b}
-  \postcode{Post-Code2b}
-  \country{Country2b}
-}
-\email{first2.last2@inst2b.org}         %% \email is recommended
+\email{firstname.lastname@glasgow.ac.uk}          %% \email is recommended
 
 
-%% Paper note
-%% The \thanks command may be used to create a "paper note" ---
-%% similar to a title note or an author note, but not explicitly
-%% associated with a particular element.  It will appear immediately
-%% above the permission/copyright statement.
-\thanks{with paper note}                %% \thanks is optional
-                                        %% can be repeated if necesary
-                                        %% contents suppressed with 'anonymous'
 
 
 %% Abstract
 %% Note: \begin{abstract}...\end{abstract} environment must come
 %% before \maketitle command
 \begin{abstract}
-Text of abstract \ldots.
+
 \end{abstract}
 
 
@@ -193,7 +157,78 @@ Text of abstract \ldots.
 
 \section{Introduction}
 
+
 Text of paper \ldots
+
+\cite{marlow2010language}
+
+
+
+\section{Learning Design Choices}
+
+In this section, we review five course design choices that we made.
+We feel these make our MOOC unique -- adding novelty to the course
+structure
+and content. Provide an effective learning experience for the student.
+
+For each choice, we describe `what we did' so other people can follow
+similar approaches. Then we review `what went well' --- based on our
+own assessment of the course and feedback from learners. Finally we 
+present `to be improved' --- highlighting issues (mostly unexpected)
+that we encountered during the course run - which were unanticipated
+and impaired course effectiveness or student learning experience.
+
+\subsection{Interactive Coding}
+
+\subsubsection{What we did}
+
+Used tryhaskell. Web-based interactive coding environment.
+Used for Haskell taster sessions. Simple script-driven interactions.
+Underlying architecture. 
+How we adapted it --- give demo scripts and github link.
+(Maybe with source code --- mention how we respond to common errors.)
+Motivation - low-overhead introduction to language and concepts.
+Don't install toolchain on day 1 - wait until students are hooked.
+(Toolchain was final activity in week 2 out of 6.)
+
+\subsubsection{What went well}
+
+User-friendly environment for one-liners. Interactive feedback (and
+occasional humour) well received. More exploratory sandbox, although
+with some structure.
+
+\subsubsection{To be improved}
+
+Some browser issues (check).
+Navigation to next steps.
+Doing anything larger than one-liners is not easy - give some example
+code - rather convoluted!
+e.g.\ pattern-matching doesn't work well.
+Difficult to scale up from tryhaskell to ghc?
+Via ghci? Our course needs more scaffolding here.
+(Feedback.)
+
+\subsection{Rockstar Interviews}
+
+
+\subsection{What we did}
+
+
+\subsection{Social Learning}
+
+\subsection{ABC Curriculum}
+
+\subsection{Blended Learning}
+
+
+
+\section{Related Work}
+
+
+
+
+
+\section{Conclusions}
 
 
 %% Acknowledgments
